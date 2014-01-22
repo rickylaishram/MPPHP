@@ -35,3 +35,37 @@ Edit **config.ini** and set value of id to your Google Analytics Tracking id.
 **$dt** *string* Document title
 
 **$options** *array* Other optional parameters.
+
+#### Event tracking
+    $mp->event( $cid, $ec, $ea, $el, $ev, $options  )
+    
+**$cid** *string* Client id
+
+**$ec** *string* Event category
+
+**$ea** *string* Event action
+
+**$el** *string* Event label
+
+**$ev** *string* Event value
+
+**$options** *array* Other optional parameters.
+
+#### Ecommerce transaction tracking
+    $mp->ecom_tran( $cid, $ti, $ta, $tr, $ts, $tt, $cu, $options  )
+    
+**$cid** *string* Client id
+
+**$ti** *string* Transaction id
+
+**$ta** *string* Transaction affilation
+
+**$tr** *string* Transaction revenue
+
+**$ts** *string* Transaction shipping
+
+**$tt** *string* Transaction tax
+
+**$cu** *string* Currency code
+
+**$options** *array* Other optional parameters.
