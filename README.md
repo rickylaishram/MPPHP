@@ -1,7 +1,7 @@
 MPPHP
 =====
 
-PHP Library for Google Measurement Protocol.
+PHP Library for Google Analytics Measurement Protocol.
 
 [Measurement Protocol](https://developers.google.com/analytics/devguides/collection/protocol/v1/)
 
