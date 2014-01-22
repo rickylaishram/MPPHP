@@ -1,4 +1,4 @@
 MPPHP
 =====
 
-PHP Library for Google Analytics
+PHP Library for Google Measurement Protocol
