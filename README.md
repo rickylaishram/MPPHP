@@ -26,91 +26,109 @@ Edit **config.ini** and set value of id to your Google Analytics Tracking id.
 #### Page tracking
     $mp->page( $cid, $dh, $dp, $dt, $options  );
     
-**$cid** *string* Client id
+**$cid** Client id
 
-**$dh** *string* Document host name
+**$dh** Document host name
 
-**$dp** *string* Document path
+**$dp** Document path
 
-**$dt** *string* Document title
+**$dt** Document title
 
 **$options** *array* Other optional parameters.
 
 #### Event tracking
     $mp->event( $cid, $ec, $ea, $el, $ev, $options  );
     
-**$cid** *string* Client id
+**$cid** Client id
 
-**$ec** *string* Event category
+**$ec** Event category
 
-**$ea** *string* Event action
+**$ea** Event action
 
-**$el** *string* Event label
+**$el** Event label
 
-**$ev** *string* Event value
+**$ev** Event value
 
 **$options** *array* Other optional parameters.
 
 #### Ecommerce transaction tracking
     $mp->ecom_tran( $cid, $ti, $ta, $tr, $ts, $tt, $cu, $options  );
     
-**$cid** *string* Client id
+**$cid** Client id
 
-**$ti** *string* Transaction id
+**$ti** Transaction id
 
-**$ta** *string* Transaction affilation
+**$ta** Transaction affilation
 
-**$tr** *string* Transaction revenue
+**$tr** Transaction revenue
 
-**$ts** *string* Transaction shipping
+**$ts** Transaction shipping
 
-**$tt** *string* Transaction tax
+**$tt** Transaction tax
 
-**$cu** *string* Currency code
+**$cu** Currency code
 
 **$options** *array* Other optional parameters.
 
 #### Ecommerce item tracking
     $mp->ecom_item( $cid, $ti, $in, $ip, $iq, $ic, $iv, $cu, $options  );
     
-**$cid** *string* Client id
+**$cid** Client id
 
-**$ti** *string* Transaction id
+**$ti** Transaction id
 
-**$in** *string* Item name
+**$in** Item name
 
-**$ip** *string* Item price
+**$ip** Item price
 
-**$iq** *string* Item quantity
+**$iq** Item quantity
 
-**$ic** *string* Item code
+**$ic** Item code
 
-**$iv** *string* Item category
+**$iv** Item category
 
-**$cu** *string* Currency code
+**$cu** Currency code
 
 **$options** *array* Other optional parameters.
 
 #### Social tracking
     $mp->social( $cid, $sa, $sn, $st, $options  );
     
-**$cid** *string* Client id
+**$cid** Client id
 
-**$sa** *string* Social Action
+**$sa** Social Action
 
-**$sn** *string* Social Network
+**$sn** Social Network
 
-**$st** *string* Social Target
+**$st** Social Target
 
 **$options** *array* Other optional parameters.
 
 #### Exception tracking
     $mp->exception( $cid, $exd, $exf, $options  );
     
-**$cid** *string* Client id
+**$cid** Client id
 
-**$exd** *string* Exception description
+**$exd** Exception description
 
-**$exf** *boolean* Is fatal?
+**$exf** Is fatal?
 
 **$options** *array* Other optional parameters.
+
+#### Timing tracking
+    $mp->timing( $cid, $utc, $utv, $utt, $utl, $options  );
+    
+**$cid** Client id
+
+**$utc** Timing category
+
+**$utv** Timing variable
+
+**$utt** Timing time
+
+**$utl** Timing label
+
+**$options** *array* Other optional parameters.
+
+
+Refer to the [parameters reference](https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters) for type of data allowed and optional parameners.
