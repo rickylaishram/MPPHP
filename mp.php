@@ -102,6 +102,7 @@ class MPPHP {
 		curl_setopt($ch,CURLOPT_URL, $this->url);
 		curl_setopt($ch,CURLOPT_POST, count($fields));
 		curl_setopt($ch,CURLOPT_POSTFIELDS, $fields_string);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		curl_exec($ch);
 		curl_close($ch);
 	}
