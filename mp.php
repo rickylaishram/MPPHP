@@ -91,7 +91,7 @@ class MPPHP {
 			$fields_string .= 'gclid='.$this->adid.'&';
 		}
 
-		if($cache) {
+		if($this->cache) {
 			$fields_string .= 'z='.rand().'&';
 		}
 
